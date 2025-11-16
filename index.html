@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nigaphone - Услуги связи</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Nigaphone</div>
+                <button class="menu-toggle">★</button>
+                <ul class="nav-links">
+                    <li><a href="#home">Основная</a></li>
+                    <li><a href="#features">Возможности, которые нельзя упустить</a></li>
+                    <li><a href="#pricing">Тарифы</a></li>
+                    <li><a href="#contact">Наши контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="container">
+            <h1>Услуги связи к вашим услугам</h1>
+            <p>Самые современные решения для вашего комфорта</p>
+            <a href="#contact" class="cta-button">Подключиться к нам</a>
+        </div>
+    </section>
+
+    <section class="features" id="features">
+        <div class="container">
+            <h2 class="section-title">Наши уникальные преимущества</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🌎</div>
+                    <h3>Доступны в любой стране мира</h3>
+                    <p>Турция, Германия, Франция - все под нами</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📵</div>
+                    <h3>Анти-спам</h3>
+                    <p>Блокируем все незнакомые и подозрительные номера</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📈</div>
+                    <h3>Прогрессивность</h3>
+                    <p>Используем нейросети в качестве голосового помощника</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <h2 class="section-title">Наши уникальные тарифы</h2>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>Базовый максимум</h3>
+                    <div class="price">1 руб/мес</div>
+                    <ul>
+                        <li>Интернет доступен в одной из стран</li>
+                        <li>Техническая поддержка</li>
+                        <li>5GB хранилище</li>
+                    </ul>
+                    <a href="#contact" class="cta-button">Выбрать</a>
+                </div>
+                <div class="pricing-card">
+                    <h3>Про</h3>
+                    <div class="price">2 руб/мес</div>
+                    <ul>
+                        <li>Доступны две страны мира</li>
+                        <li>Тех поддержка, но от специалистов с двумя высшими образованиями</li>
+                        <li>10GB хранилище</li>
+                    </ul>
+                    <a href="#contact" class="cta-button">Выбрать</a>
+                </div>
+                <div class="pricing-card rainbow-frog-card">
+                    <div class="frog-badge">9/10 стоматологов рекомендуют</div>
+                    <h3>Лягушка - Путешественница</h3>
+                    <div class="price">3e10 руб/мес</div>
+                    <ul>
+                        <li>Все страны мира вам подвластны</li>
+                        <li>24/7 поддержка по всем жизненным вопросам</li>
+                        <li>Неограниченный интернет</li>
+                        <li>+ Бесплатная доставка лягушки-талисмана</li>
+                    </ul>
+                    <a href="#contact" class="cta-button">Выбрать</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Ну давайте, свяжитесь с нами</h2>
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <label for="name">Имя</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Сообщение</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="cta-button">Отправить</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2026 Nigaphone. Все права вроде защищены.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
