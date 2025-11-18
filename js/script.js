@@ -1,22 +1,41 @@
 const menuToggle = document.querySelector('.menu-toggle');
 const navLinks = document.querySelector('.nav-links');
+const navLinksItems = document.querySelectorAll('.nav-link');
+const pageSections = document.querySelectorAll('.page-section');
 
 menuToggle.addEventListener('click', () => {
     navLinks.classList.toggle('active');
 });
 
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
+navLinksItems.forEach(link => {
+    link.addEventListener('click', function(e) {
         e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-            target.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
-            });
-            navLinks.classList.remove('active');
+        const targetId = this.getAttribute('href').substring(1);
+        
+        pageSections.forEach(section => {
+            section.classList.remove('active');
+        });
+        
+        const targetSection = document.getElementById(targetId);
+        if (targetSection) {
+            targetSection.classList.add('active');
         }
+        
+        navLinks.classList.remove('active');
     });
+});
+
+const contactForm = document.getElementById('contactForm');
+contactForm.addEventListener('submit', function(e) {
+    e.preventDefault();
+    const formData = {
+        name: document.getElementById('name').value,
+        email: document.getElementById('email').value,
+        message: document.getElementById('message').value
+    };
+    console.log('Form submitted:', formData);
+    alert('Спасибо! Ваше сообщение отправлено. Мы свяжемся с вами в ближайшее время.');
+    contactForm.reset();
 });
 
 window.addEventListener('scroll', () => {
@@ -55,3 +74,5 @@ const rainbowCard = document.querySelector('.rainbow-frog-card');
 rainbowCard.addEventListener('mouseenter', function() {
     console.log('Лягушка-Путешественница активирована! 🐸');
 });
+
+document.getElementById('home').classList.add('active');
