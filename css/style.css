@@ -1,349 +1,521 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/* ===== ОСНОВНЫЕ СТИЛИ ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-body {
-    font-family: "Arial", sans-serif;
-    line-height: 1.6;
-    color: #333;
-}
+        body {
+            font-family: "Arial", sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
 
-header {
-    background: #8A2BE2;
-    color: white;
-    padding: 1rem 0;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-    transition: background 0.3s ease;
-}
+        /* ===== ШАПКА САЙТА ===== */
+        header {
+            background: #8A2BE2;
+            color: white;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            transition: background 0.3s ease;
+        }
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
 
-.logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-}
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
 
-.nav-links {
-    display: flex;
-    list-style: none;
-}
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
 
-.nav-links li {
-    margin-left: 2rem;
-}
+        .nav-links li {
+            margin-left: 2rem;
+        }
 
-.nav-links a {
-    color: white;
-    text-decoration: none;
-    transition: color 0.3s;
-}
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
 
-.nav-links a:hover {
-    color: #FFD700;
-}
+        .nav-links a:hover {
+            color: #FFD700;
+        }
 
-.hero {
-    background: linear-gradient(135deg, #85ea66 50%, rgba(60, 173, 207, 0.863) 100%);
-    color: white;
-    padding: 150px 0 100px;
-    text-align: center;
-}
+        /* ===== ГЛАВНЫЙ БАННЕР ===== */
+        .hero {
+            background: linear-gradient(135deg, #85ea66 50%, rgba(60, 173, 207, 0.863) 100%);
+            color: white;
+            padding: 150px 0 100px;
+            text-align: center;
+        }
 
-.hero h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-}
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
 
-.hero p {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-}
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
 
-.cta-button {
-    display: inline-block;
-    background: #e74c3c;
-    color: white;
-    padding: 12px 30px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background 0.3s;
-}
+        /* ===== КНОПКИ ===== */
+        .cta-button {
+            display: inline-block;
+            background: #e74c3c;
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
 
-.cta-button:hover {
-    background: #c0392b;
-}
+        .cta-button:hover {
+            background: #c0392b;
+        }
 
-.features {
-    padding: 80px 0;
-    background: #f8f9fa;
-}
+        /* ===== РАЗДЕЛ ВОЗМОЖНОСТЕЙ ===== */
+        .features {
+            padding: 80px 0;
+            background: #f8f9fa;
+        }
 
-.section-title {
-    text-align: center;
-    margin-bottom: 3rem;
-}
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
 
-.features-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-}
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
 
-.feature-card {
-    background: white;
-    padding: 2rem;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
-}
+        .feature-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
 
-.feature-card:hover {
-    transform: translateY(-5px);
-}
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
 
-.feature-icon {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-}
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
 
-.pricing {
-    padding: 80px 0;
-}
+        /* ===== РАЗДЕЛ ТАРИФОВ ===== */
+        .pricing {
+            padding: 80px 0;
+        }
 
-.pricing-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-}
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
 
-.pricing-card {
-    background: white;
-    padding: 2rem;
-    border-radius: 10px;
-    text-align: center;
-    border: 2px solid #e0e0e0;
-    transition: all 0.3s ease;
-    position: relative;
-    overflow: hidden;
-}
+        .pricing-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+            border: 2px solid #e0e0e0;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
 
-.pricing-card:hover {
-    border-color: #3498db;
-}
+        .pricing-card:hover {
+            border-color: #3498db;
+        }
 
-.price {
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: #2c3e50;
-    margin: 1rem 0;
-}
+        .price {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #2c3e50;
+            margin: 1rem 0;
+        }
 
-.rainbow-frog-card {
-    background: linear-gradient(45deg, #ff0000, #ff8000, #ffff00, #00ff00, #00ffff, #0000ff, #8000ff, #ff0080, #ff0000);
-    background-size: 400% 400%;
-    animation: rainbow 3s ease infinite;
-    color: #000000;
-    border: none;
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
-    position: relative;
-    z-index: 1;
-    cursor: pointer;
-}
+        /* ===== СПЕЦИАЛЬНАЯ КАРТОЧКА ТАРИФА ===== */
+        .rainbow-frog-card {
+            background: linear-gradient(45deg, #ff0000, #ff8000, #ffff00, #00ff00, #00ffff, #0000ff, #8000ff, #ff0080, #ff0000);
+            background-size: 400% 400%;
+            animation: rainbow 3s ease infinite;
+            color: #000000;
+            border: none;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+            position: relative;
+            z-index: 1;
+            cursor: pointer;
+        }
 
-.rainbow-frog-card::before {
-    content: '';
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    right: 10px;
-    bottom: 10px;
-    background: rgba(255, 255, 255, 0.85);
-    border-radius: 8px;
-    z-index: -1;
-}
+        .rainbow-frog-card::before {
+            content: '';
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            right: 10px;
+            bottom: 10px;
+            background: rgba(255, 255, 255, 0.85);
+            border-radius: 8px;
+            z-index: -1;
+        }
 
-.rainbow-frog-card:hover {
-    animation: rainbow 1s ease infinite, jump 0.6s ease;
-    transform: translateY(-25px) scale(1.08);
-    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4);
-}
+        .rainbow-frog-card:hover {
+            animation: rainbow 1s ease infinite, jump 0.6s ease;
+            transform: translateY(-25px) scale(1.08);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4);
+        }
 
-.rainbow-frog-card h3,
-.rainbow-frog-card .price,
-.rainbow-frog-card ul {
-    position: relative;
-    z-index: 2;
-    color: #000000;
-}
+        .rainbow-frog-card h3,
+        .rainbow-frog-card .price,
+        .rainbow-frog-card ul {
+            position: relative;
+            z-index: 2;
+            color: #000000;
+        }
 
-.rainbow-frog-card h3 {
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
-}
+        .rainbow-frog-card h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
 
-.rainbow-frog-card .price {
-    color: #e74c3c;
-    font-size: 2.8rem;
-}
+        .rainbow-frog-card .price {
+            color: #e74c3c;
+            font-size: 2.8rem;
+        }
 
-.rainbow-frog-card ul {
-    list-style: none;
-    margin: 1.5rem 0;
-}
+        .rainbow-frog-card ul {
+            list-style: none;
+            margin: 1.5rem 0;
+        }
 
-.rainbow-frog-card ul li {
-    padding: 8px 0;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-    color: #000000;
-}
+        .rainbow-frog-card ul li {
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+            color: #000000;
+        }
 
-.rainbow-frog-card ul li:last-child {
-    border-bottom: none;
-}
+        .rainbow-frog-card ul li:last-child {
+            border-bottom: none;
+        }
 
-.rainbow-frog-card .cta-button {
-    position: relative;
-    z-index: 2;
-    color: white !important;
-    background: #e74c3c;
-}
+        .rainbow-frog-card .cta-button {
+            position: relative;
+            z-index: 2;
+            color: white !important;
+            background: #e74c3c;
+        }
 
-.rainbow-frog-card .cta-button:hover {
-    background: #c0392b;
-    color: white !important;
-}
+        .rainbow-frog-card .cta-button:hover {
+            background: #c0392b;
+            color: white !important;
+        }
 
-.frog-badge {
-    position: absolute;
-    top: -10px;
-    right: -10px;
-    background: #e74c3c;
-    color: white;
-    padding: 8px 12px;
-    border-radius: 20px;
-    font-size: 0.8rem;
-    font-weight: bold;
-    transform: rotate(15deg);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-    z-index: 3;
-    text-align: center;
-    line-height: 1.2;
-    max-width: 120px;
-}
+        .frog-badge {
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            background: #e74c3c;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            transform: rotate(15deg);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            z-index: 3;
+            text-align: center;
+            line-height: 1.2;
+            max-width: 120px;
+        }
 
-@keyframes rainbow {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-}
+        /* Стили для изображений в тарифах */
+        .plan-image {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 1rem;
+            display: block;
+            border: 3px solid #e0e0e0;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
 
-@keyframes jump {
-    0% { transform: translateY(0) scale(1); }
-    25% { transform: translateY(-30px) scale(1.08); }
-    50% { transform: translateY(-25px) scale(1.06); }
-    75% { transform: translateY(-20px) scale(1.04); }
-    100% { transform: translateY(-25px) scale(1.08); }
-}
+        .frog-image {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 1rem;
+            display: block;
+            border: 3px solid white;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
 
-.contact {
-    padding: 80px 0;
-    background: #2c3e50;
-    color: white;
-}
+        /* ===== СТРАНИЦА КОНТАКТОВ ===== */
+        .contacts-page {
+            padding: 120px 0 80px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            min-height: 100vh;
+        }
 
-.contact-form {
-    max-width: 600px;
-    margin: 0 auto;
-}
+        .contacts-content {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
 
-.form-group {
-    margin-bottom: 1.5rem;
-}
+        .phone-info {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+        }
 
-.form-group label {
-    display: block;
-    margin-bottom: 0.5rem;
-}
+        .phone-image {
+            max-width: 400px;
+            width: 100%;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            margin: 2rem auto;
+            display: block;
+            border: 5px solid white;
+        }
 
-.form-group input,
-.form-group textarea {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    font-size: 1rem;
-}
+        .contact-info {
+            margin-top: 2rem;
+            font-size: 1.1rem;
+        }
 
-footer {
-    background: #4B0082;
-    color: white;
-    text-align: center;
-    padding: 2rem 0;
-}
+        .contact-icons {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin: 2rem 0;
+        }
 
-.menu-toggle {
-    display: none;
-    background: none;
-    border: none;
-    color: white;
-    font-size: 1.5rem;
-    cursor: pointer;
-}
+        .contact-icon {
+            font-size: 3rem;
+            background: rgba(255, 255, 255, 0.1);
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            backdrop-filter: blur(10px);
+        }
 
-@media (max-width: 768px) {
-    .menu-toggle {
-        display: block;
-    }
+        /* ===== ФОРМА ОБРАТНОЙ СВЯЗИ ===== */
+        .contact-form-page {
+            padding: 120px 0 80px;
+            background: #1e3a8a;
+            color: white;
+            min-height: 100vh;
+        }
 
-    .nav-links {
-        display: none;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        background: #8A2BE2;
-        flex-direction: column;
-        padding: 1rem 0;
-    }
+        .contact-form-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
 
-    .nav-links.active {
-        display: flex;
-    }
+        .contact-form-page .section-title {
+            color: #1e3a8a;
+            margin-bottom: 2rem;
+        }
 
-    .nav-links li {
-        margin: 0;
-        text-align: center;
-        padding: 0.5rem 0;
-    }
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
 
-    .hero h1 {
-        font-size: 2rem;
-    }
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+            color: #1e3a8a;
+        }
 
-    .rainbow-frog-card:hover {
-        transform: translateY(-15px) scale(1.05);
-    }
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e2e8f0;
+            border-radius: 5px;
+            font-size: 1rem;
+            background: white;
+            color: #2d3748;
+            transition: border-color 0.3s;
+        }
 
-    .frog-badge {
-        font-size: 0.7rem;
-        padding: 6px 10px;
-        max-width: 100px;
-    }
-}
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #1e3a8a;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .contact-form-page .cta-button {
+            background: #1e3a8a;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s;
+            width: 100%;
+            font-size: 1.1rem;
+        }
+
+        .contact-form-page .cta-button:hover {
+            background: #1e40af;
+        }
+
+        /* ===== СИСТЕМА СТРАНИЦ ===== */
+        .page-section {
+            display: none;
+        }
+
+        .page-section.active {
+            display: block;
+        }
+
+        /* ===== АНИМАЦИИ ===== */
+        @keyframes rainbow {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        @keyframes jump {
+            0% { transform: translateY(0) scale(1); }
+            25% { transform: translateY(-30px) scale(1.08); }
+            50% { transform: translateY(-25px) scale(1.06); }
+            75% { transform: translateY(-20px) scale(1.04); }
+            100% { transform: translateY(-25px) scale(1.08); }
+        }
+
+        /* ===== ПОДВАЛ САЙТА ===== */
+        footer {
+            background: #4B0082;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        /* ===== МОБИЛЬНАЯ ВЕРСИЯ ===== */
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        @media (max-width: 768px) {
+            .menu-toggle {
+                display: block;
+            }
+
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: #8A2BE2;
+                flex-direction: column;
+                padding: 1rem 0;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .nav-links li {
+                margin: 0;
+                text-align: center;
+                padding: 0.5rem 0;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .rainbow-frog-card:hover {
+                transform: translateY(-15px) scale(1.05);
+            }
+
+            .frog-badge {
+                font-size: 0.7rem;
+                padding: 6px 10px;
+                max-width: 100px;
+            }
+
+            .phone-info {
+                font-size: 1.8rem;
+            }
+
+            .phone-image {
+                max-width: 300px;
+            }
+
+            .contact-form-container {
+                padding: 20px;
+                margin: 0 20px;
+            }
+
+            .contact-icons {
+                gap: 1rem;
+            }
+
+            .contact-icon {
+                font-size: 2rem;
+                width: 60px;
+                height: 60px;
+            }
+            
+            .plan-image,
+            .frog-image {
+                width: 100px;
+                height: 100px;
+            }
+        }
