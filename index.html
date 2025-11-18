@@ -104,7 +104,24 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <section class="contact" id="contact">
         <div class="container">
             <h2 class="section-title">Ну давайте, свяжитесь с нами</h2>
+        <!--
             <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <label for="name">Имя</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Сообщение</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="cta-button">Отправить</button>
+            </form>
+            -->
+            <form class="contact-form" action="https://formspree.io/f/твой-уникальный-код" method="POST">
                 <div class="form-group">
                     <label for="name">Имя</label>
                     <input type="text" id="name" name="name" required>
